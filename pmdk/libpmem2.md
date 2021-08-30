@@ -7,6 +7,8 @@
    映射的文件是传入的源结构题的文件句柄fd，该值是在pmem2_source_from_fd()中赋值。
 5.  pmem2_map_get_size()根据创建的映射结构体实例获取映射的长度。
 6.  pmem2_map_get_address()根据创建的映射结构体实例获取映射的首地址。
-7.  pmem2_map_delete() 去除映射文件，并释放映射结构体内存空间。
-8.  pmem2_source_delete() 释放源结构体内存空间。
-9.  pmem2_config_delete() 释放配置结构体内存空间。
+7.  pmem2_get_persist_fn()从映射结构体获取持久化函数指针persist。
+8.  调用持久化函数persist()持久化对应地址指定长度的数据。
+9.  pmem2_map_delete() 去除映射文件，并释放映射结构体内存空间。
+10.  pmem2_source_delete() 释放源结构体内存空间。
+11.  pmem2_config_delete() 释放配置结构体内存空间。
